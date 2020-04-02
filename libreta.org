@@ -1,19 +1,20 @@
 # Aceptación - "2 + 2", devuelve 4
-# - Sumar 2 al número 2, devuelve 4   ¡HECHO!
-# - La cadena "2 + 2", tiene dos números y un operador: ’2’, ’2’ y ’+’
-# Aceptación "7 + 5", devuelve 12 ¡HECHO!
-# Test propiedad conmutativa  a + b = b + a ¡HECHO!
-
+# - Sumar 2 al número 2, devuelve 4 - ¡HECHO!
+# - La propiedad conmutativa se cumple - ¡HECHO!
+# - La cadena "2 + 2", tiene dos números y un operador: ’2’,’2’ y ’+’ ¡HECHO!
+# Aceptación "7 + 5" devuelve 12 ¡HECHO!
 # Aceptación - "5 - 3", devuelve 2
 # - Restar 5 al número 3, devuelve 2 - ¡HECHO!
 # - Restar 2 al número 3, devuelve -1 - ¡HECHO!
 # - La propiedad conmutativa no se cumple - ¡HECHO!
-
+# Aceptación - "2 + -2", devuelve 0
+# - Sumar 2 al número -2, devuelve 0
+# - Restar 2 al número -5, devuelve -7
+# - Restar -2 al número -7, devuelve -5
 # Aceptación - "5 + 4 * 2 / 2", devuelve 9
-# Aceptación - "3 / 2", produce el mensaje ERROR
-# Aceptación - "* * 4 - 2": produce el mensaje ERROR
-# Aceptación -"* 4 5 - 2": produce el mensaje ERROR
-# Aceptación -"* 4 5 - 2 : produce el mensaje ERROR
-# Aceptación -"*45-2-": produce el mensaje ERROR
-
+# Aceptación - "3 / 2", devuelve un error
+# Aceptación - "* * 4 - 2": devuelve un error
+# Aceptación - "* 4 5 - 2": devuelve un error
+# Aceptación - "* 4 5 - 2 : devuelve un error
+# Aceptación - "*45-2-": devuelve un error
 # -¿Qué número es el más grande que se puede manejar?, ¿y el más pequeño?
