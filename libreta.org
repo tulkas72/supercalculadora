@@ -27,3 +27,6 @@
 # Aceptación - "* 4 5 - 2 : devuelve un error
 # Aceptación - "*45-2-": devuelve un error
 # -¿Qué número es el más grande que se puede manejar?, ¿y el más pequeño?
+
+# renombrado ut_supercalculadora.py a ut_main.py
+
