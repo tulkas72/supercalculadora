@@ -28,3 +28,24 @@ class TestCalculadora(unittest.TestCase):
     def test_restar_no_propiedad_conmutativa(self):
         self.assertNotEqual(self.calc.restar(5, 3),
                             self.calc.restar(3, 5))
+
+    def test_sumar_numeros_negativos(self):
+        self.assertEqual(0, self.calc.sumar(2, -2))
+
+    def test_restar_numeros_negativos(self):
+        self.assertEqual(-7, self.calc.restar(-5, 2))
+        self.assertEqual(-5, self.calc.restar(-7, -2))
+
+    def test_division_exacta(self):
+        self.assertEqual(1, self.calc.dividir(2, 2))
+        self.assertEqual(2, self.calc.dividir(10, 5))
+
+    def test_division_exacta_negativa(self):
+        self.assertEqual(-2, self.calc.dividir(10, -5))
+        self.assertEqual(2, self.calc.dividir(-10, -5))
+
+    def test_division_no_entera_da_excepcion(self):
+        self.assertEqual(ValueError, self.calc.dividir(3, 2))
+
+    def test_division_por_0(self):
+        self.assertEqual(ZeroDivisionError, self.calc.dividir(3, 0))

@@ -8,11 +8,20 @@
 # - Restar 2 al número 3, devuelve -1 - ¡HECHO!
 # - La propiedad conmutativa no se cumple - ¡HECHO!
 # Aceptación - "2 + -2", devuelve 0
-# - Sumar 2 al número -2, devuelve 0
-# - Restar 2 al número -5, devuelve -7
-# - Restar -2 al número -7, devuelve -5
-# Aceptación - "5 + 4 * 2 / 2", devuelve 9
+# - Sumar 2 al número -2, devuelve 0 - ¡HECHO!
+# - Restar 2 al número -5, devuelve -7 - ¡HECHO!
+# - Restar -2 al número -7, devuelve -5 - ¡HECHO!
+# Aceptación - "5 + 4 * 2 / 2", devuelve 9 
+# "5 + 4 * 2 / 2", devuelve 9
+# Operandos son ’5’,’4’, ’2’ y ’2’ y operadores ’+’, ’*’,’/’ - ¡HECHO!
 # Aceptación - "3 / 2", devuelve un error
+# - Dividir 2 entre 2 da 1   ¡HECHO!
+# - Dividir 10 entre 5 da 2 ¡HECHO!
+# - Dividir 10 entre -5 da -2 ¡HECHO!
+# - Dividir -10 entre -5 da 2 ¡HECHO!
+# - Dividir 3 entre 2 lanza una excepción ¡HECHO!
+# - Dividir 3 entre 0 lanza una excepción ¡HECHO!
+# - La cadena "10 / -5", tiene dos números y un operador:’10’, ’-5’ y ’/’ ¡HECHO!
 # Aceptación - "* * 4 - 2": devuelve un error
 # Aceptación - "* 4 5 - 2": devuelve un error
 # Aceptación - "* 4 5 - 2 : devuelve un error
