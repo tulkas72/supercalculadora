@@ -10,3 +10,13 @@ class TestsSupercalculadora(unittest.TestCase):
         sc = supercalculadora.Supercalculadora(
             expr_aritmetica.ExprAritmetica())
         self.assertEqual("4", sc.calcular("2 + 2"))
+
+    def test_restar(self):
+        sc = supercalculadora.Supercalculadora(
+            expr_aritmetica.ExprAritmetica())
+        self.assertEqual("0", sc.calcular("2 - 2"))
+
+    def test_expresion_compleja_sin_parentesis_sin_precedencia(self):
+        sc = supercalculadora.Supercalculadora(
+            expr_aritmetica.ExprAritmetica())
+        self.assertEqual("6", sc.calcular("5 + 4 - 3"))

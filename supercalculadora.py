@@ -9,7 +9,17 @@ class Supercalculadora:
 
     def calcular(self, expresion):
         expr_descompuesta = self.parser.parse(expresion)
-        if expr_descompuesta['Operadores'][0] == '+':
-            return str(self.calc.sumar(
-                expr_descompuesta['Operandos'][0],
-                expr_descompuesta['Operandos'][1]))
+        res = 0
+        for i in range(len(expr_descompuesta['Operadores'])):
+            if i == 0:
+                res = expr_descompuesta['Operandos'][0]
+            if expr_descompuesta['Operadores'][i] == '+':
+                res = self.calc.sumar(
+                    res,
+                    expr_descompuesta['Operandos'][i+1])
+            elif expr_descompuesta['Operadores'][i] == '-':
+                res = self.calc.restar(
+                    res,
+                    expr_descompuesta['Operandos'][i+1])
+
+        return str(res)
