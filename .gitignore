@@ -1,1 +1,7 @@
 *.pyc
+.benchmarks/
+__pycache__/ 
+.pytest_cache/ 
+.vscode/
+__pycache__/calculadora.cpython-37.pyc
+__pycache__/supercalculadora.cpython-37.pyc
