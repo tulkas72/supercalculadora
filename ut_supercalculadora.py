@@ -29,6 +29,7 @@ import ut_expr_aritmetica
 
 class TestsSupercalculadora(unittest.TestCase):
     def setUp(self):
+        "añadido setup y teardown debajo"
         self.sc = supercalculadora.Supercalculadora(
             expr_aritmetica.ExprAritmetica())
 
@@ -36,19 +37,18 @@ class TestsSupercalculadora(unittest.TestCase):
         pass
 
     def test_sumar(self):
-        self.failUnlessEqual("4", self.sc.calcular("2 + 2"))
+        self.assertEqual("4", self.sc.calcular("2 + 2"))
 
     def test_restar(self):
-        self.failUnlessEqual("0", self.sc.calcular("2 - 2"))
+        self.assertEqual("0", self.sc.calcular("2 - 2"))
 
     def test_expresion_compleja_sin_parentesis_sin_precedencia(self):
-        self.failUnlessEqual("6", self.sc.calcular("5 + 4 - 3"))
+        self.assertEqual("6", self.sc.calcular("5 + 4 - 3"))
 
 # añade función de simplificar
-# 1    def test_expresion_compleja_sin_parentesis_con_precedencia(self):
-# 1        self.failUnlessEqual("3", self.sc.calcular("5 + 4 / 2 - 4"))
-
-# modifica función simplificar
-# 2    def test_expresion_compleja_sin_parentesis_con_precedencia(self):
-# 2        self.failUnlessEqual("3", self.sc.calcular("5 + 4 / 2 - 4"))
-# 3        self.failUnlessEqual("-1", self.sc.calcular("4 / 2 - 3"))
+    def test_expresion_compleja_sin_parentesis_con_precedencia(self):
+        self.assertEqual("3", self.sc.calcular("5 + 4 / 2 - 4"))
+        self.assertEqual("-1", self.sc.calcular("4 / 2 - 3"))
+        self.assertEqual("1", self.sc.calcular("4 / 2 - 3 + 1 + 6 / 3 - 1"))
+        self.assertEqual(
+            "-8", self.sc.calcular("4 / -2 + 3 + -1 + -6 / -3 - 10"))

@@ -13,4 +13,4 @@ if __name__ == "__main__":
         ut_expr_aritmetica.TestsExprAritmetica))
     suite.addTest(unittest.makeSuite(
         ut_supercalculadora.TestsSupercalculadora))
-    unittest.TextTestRunner(verbosity=4).run(suite)
+    unittest.TextTestRunner(verbosity=3).run(suite)
