@@ -1,11 +1,13 @@
 import expr_aritmetica
 import calculadora
+import validador_expr_aritmetica
 
 
 class Supercalculadora:
-    def __init__(self, parser):
+    def __init__(self, parser, validador):  # añadido parámetro validador
         self.calc = calculadora.Calculadora()
         self.parser = parser
+        self.validador = validador
 
     def __operar__(self, expr_descompuesta):
         i = None
@@ -52,5 +54,8 @@ class Supercalculadora:
         return self.__simplificar__(expr_simplificada)
 
     def calcular(self, expresion):
+        if not self.validador.validar(expresion):  # añadido para mock
+            raise SyntaxError("La expresion no es valida")
+
         return str(self.__simplificar__(
             self.parser.parse(expresion))['Operandos'][0])
