@@ -52,3 +52,7 @@ class TestsSupercalculadora(unittest.TestCase):
         self.assertEqual("1", self.sc.calcular("4 / 2 - 3 + 1 + 6 / 3 - 1"))
         self.assertEqual(
             "-8", self.sc.calcular("4 / -2 + 3 + -1 + -6 / -3 - 10"))
+        self.assertEqual("9", self.sc.calcular("5 + 4 * 2 / 2"))  # n
+
+        # prueba para comprobar si la división lanza una excepción si el resultado no es exacto
+        self.assertEqual("11", self.sc.calcular("4 - -3 * 2 / 3 + 5"))  # n

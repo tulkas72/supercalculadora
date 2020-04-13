@@ -49,3 +49,11 @@ class TestCalculadora(unittest.TestCase):
 
     def test_division_por_0(self):
         self.assertEqual(ZeroDivisionError, self.calc.dividir(3, 0))
+
+    def test_multiplicar_simple(self):  # n
+        self.assertEqual(8, self.calc.multiplicar(4, 2))
+
+    def test_multiplicar_negativa(self):  # n
+        self.assertEqual(-8, self.calc.multiplicar(-4, 2))
+        self.assertEqual(-8, self.calc.multiplicar(4, -2))
+        self.assertEqual(8, self.calc.multiplicar(-4, -2))

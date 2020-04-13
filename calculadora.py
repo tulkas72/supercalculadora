@@ -5,6 +5,9 @@ class Calculadora:
     def restar(self, a, b):
         return a - b
 
+    def multiplicar(self, a, b):  # n
+        return a * b
+
     def dividir(self, a, b):
         if b == 0:
             return ZeroDivisionError

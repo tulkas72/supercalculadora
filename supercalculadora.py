@@ -10,11 +10,17 @@ class Supercalculadora:
     def __operar__(self, expr_descompuesta):
         i = None
         res_intermedio = 0
-        if '/' in expr_descompuesta['Operadores']:
-            i = expr_descompuesta['Operadores'].index('/')
-            res_intermedio = self.calc.dividir(
+        # intercambiar / y * por el error de la división
+        if '*' in expr_descompuesta['Operadores']:
+            i = expr_descompuesta['Operadores'].index('*')
+            res_intermedio = self.calc.multiplicar(
                 expr_descompuesta['Operandos'][i],
                 expr_descompuesta['Operandos'][i + 1])
+        elif '/' in expr_descompuesta['Operadores']:  # n
+            i = expr_descompuesta['Operadores'].index('/')  # n
+            res_intermedio = self.calc.dividir(
+                expr_descompuesta['Operandos'][i],
+                expr_descompuesta['Operandos'][i + 1])  # n
         elif '-' in expr_descompuesta['Operadores']:
             i = expr_descompuesta['Operadores'].index('-')
             res_intermedio = self.calc.restar(
