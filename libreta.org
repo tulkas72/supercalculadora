@@ -12,7 +12,7 @@
 # - Restar 2 al número -5, devuelve -7 - ¡HECHO!
 # - Restar -2 al número -7, devuelve -5 - ¡HECHO!
 # Aceptación - "5 + 4 * 2 / 2", devuelve 9 
-# - "5 + 4 * 2 / 2", devuelve 9
+# - "5 + 4 * 2 / 2", devuelve 9, ¡HECHO!
 # # - "4 * 2", devuelve 8, ¡HECHO! 
 # # - "-4 * 2", devuelve -8, ¡HECHO!
 # # - "4 * -2", devuelve -8, ¡HECHO!
