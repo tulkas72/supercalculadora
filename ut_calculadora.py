@@ -4,6 +4,9 @@ import calculadora
 
 class TestCalculadora(unittest.TestCase):
     def setUp(self):
+        """
+            autor: x
+        """
         self.calc = calculadora.Calculadora()
 
     def tearDown(self):
