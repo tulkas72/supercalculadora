@@ -1,8 +1,8 @@
 import unittest
 import supercalculadora
 import expr_aritmetica
-import ut_calculadora
-import ut_expr_aritmetica
+import test_calculadora
+import test_expr_aritmetica
 import validador_expr_aritmetica
 from mox3 import mox
 

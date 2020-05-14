@@ -3,9 +3,13 @@ import calculadora
 
 
 class TestCalculadora(unittest.TestCase):
+    """[summary]
+
+    :param unittest: [description]
+    :type unittest: [type]
+    """
     def setUp(self):
-        """
-            autor: x
+        """[summary]
         """
         self.calc = calculadora.Calculadora()
 
